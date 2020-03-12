@@ -74,14 +74,10 @@ function getLocaleAndBasePath(path) {
   return { locale: defaultLang, basePath: path }
 }
 
-function makeDefaultLang() {}
-
 module.exports = {
   langCodes,
   langs,
   defaultLang,
-  isDefaultLang,
-  makeDefaultLang,
   localizedPath,
   getLocaleAndBasePath,
 }
