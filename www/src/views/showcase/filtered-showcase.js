@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Component } from "react"
-import MdArrowDownward from "react-icons/lib/md/arrow-downward"
+import { MdArrowDownward } from "react-icons/md"
 import Fuse from "fuse.js"
 
 import { loadMoreButton } from "../shared/styles"
@@ -29,7 +29,7 @@ const filterByCategories = (list, categories) => {
         categories.length === 0 ||
         filteredCategories.length === categories.length
       ) {
-        aggregated.push(edge)
+        aggregated.push(node)
       }
 
       return aggregated
